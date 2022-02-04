@@ -1,0 +1,24 @@
+
+[
+    {
+        "id": "f37d0332-4970-4b8f-99fd-1aeec5075b74",
+        "title": "This Side of Paradise",
+        "copyright_year": "1920",
+        "description": "The Jazz Age was not just a drastic change in the cluture; it was a new dimension in consciousness. During the 1910s and 1920s America underwent a massive paradigm shift, a transition from an era of smug Victorian conformity and certainty to one of confusion and ambiguity called \"modernism\".",
+        "author": "13b1731c-b418-4070-9084-884a3594e563"
+    },
+    {
+        "id": "af578f48-25fd-42ed-b6da-2ef6609db675",
+        "title": "The Alchemist",
+        "copyright_year": "1988",
+        "description": "Paulo Coelho's enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and inspiring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried in the Pyramids.",
+        "author": "c9e75936-786f-4958-b61a-c6e297eaac64"
+    },
+    {
+        "id": "3b956f1c-2e7a-4439-b815-3463c26d50c5",
+        "title": "Dracula",
+        "copyright_year": "1897",
+        "description": "Written in the form of letters, diary entries, and news bits, Dracula chronicles the vampire's journey from his Transylvanian castle to the nighttime streets of London. There he searches for the blood he needs to stay alive - the blood of strong men and beautiful women - while his enemies plot to rid the world of his frightful power.",
+        "author": "d581897f-832e-4cfa-b468-a935c736f260"
+    }
+]
