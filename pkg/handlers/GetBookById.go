@@ -8,6 +8,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
+	"gorm.io/gorm/clause"
 )
 
 func (h handler) GetBookById(w http.ResponseWriter, r *http.Request) {
@@ -16,7 +17,7 @@ func (h handler) GetBookById(w http.ResponseWriter, r *http.Request) {
 
 	var book models.Book
 
-	if result := h.DB.First(&book, id); result.Error != nil {
+	if result := h.DB.Preload(clause.Associations).First(&book, id); result.Error != nil {
 		fmt.Println(result.Error)
 	}
 
