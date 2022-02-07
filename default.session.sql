@@ -1,11 +1,10 @@
 CREATE TABLE books (
     id SERIAL,
-    author_id INT NOT NULL,
-    title VARCHAR(50) NOT NULL,
+    author_id INT REFERENCES(authors(id)),
+    title VARCHAR(50),
     copyright_year INT,
-    about VARCHAR(355),
-    PRIMARY KEY(id)
-)
+    about TEXT
+);
 
 INSERT INTO books (
     author_id,
@@ -19,6 +18,9 @@ INSERT INTO books (
 
 
 SELECT * FROM books;
+
+SELECT * FROM information_schema.tables
+WHERE table_schema NOT IN ('information_schema', 'pg_catalog');
 
 DROP TABLE books;
 

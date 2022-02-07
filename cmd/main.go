@@ -21,6 +21,12 @@ func main() {
 	router.HandleFunc("/authors/{id}", h.UpdateAuthor).Methods(http.MethodPut)
 	router.HandleFunc("/authors/{id}", h.DeleteAuthor).Methods(http.MethodDelete)
 
+	router.HandleFunc("/books", h.GetBooks).Methods(http.MethodGet)
+	router.HandleFunc("/books", h.CreateBook).Methods(http.MethodPost)
+	router.HandleFunc("/books/{id}", h.GetBookById).Methods(http.MethodGet)
+	router.HandleFunc("/books/{id}", h.UpdateBook).Methods(http.MethodPut)
+	router.HandleFunc("/books/{id}", h.DeleteBook).Methods(http.MethodDelete)
+
 	log.Println("API is running!")
 	http.ListenAndServe(":8080", router)
 }
