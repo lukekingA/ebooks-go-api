@@ -27,6 +27,11 @@ func main() {
 	router.HandleFunc("/books/{id}", h.UpdateBook).Methods(http.MethodPut)
 	router.HandleFunc("/books/{id}", h.DeleteBook).Methods(http.MethodDelete)
 
+	// It would be a nice streach goal to implement some middle ware here
+	// Couple links on go context in a request and middle ware implementation.
+	// https://ieftimov.com/post/make-resilient-golang-net-http-servers-using-timeouts-deadlines-context-cancellation/
+	// https://drstearns.github.io/tutorials/gomiddleware/
+
 	log.Println("API is running!")
 	http.ListenAndServe(":8080", router)
 }
